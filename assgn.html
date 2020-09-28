@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        
+    }
+
+
+    #navbar {
+        display: flex;
+        padding: 1px 0px;
+        position: relative;
+    }
+
+    .logo {
+        height: 30px;
+        width: 49px;
+    }
+
+    #navbar ul {
+        display: flex;
+        list-style: none;
+    }
+
+    #navbar ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 3px 10px;
+        margin: 2px 3px;
+        border-radius: 20px;
+        color: whitesmoke;
+
+    }
+
+    #navbar ul li a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #home::before {
+        content: "";
+        position: absolute;
+        background-image: url('./homeabhi.jpg');
+        background-repeat: no-repeat;
+        background-size: 1232px 500px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 1.0;
+    }
+
+    .searchbox {
+        text-align: center;
+        /* display: flex; */
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <div>
+            <ul>
+                <li class="item"><a href="assgn.html">BUY</a></li>
+                <li class="item"><a href="http://www.homerentals.com/">RENT</a></li>
+                <li class="item"><a href="#">SELL</a></li>
+                <li class="item"><a href="#">HOME LOANS</a></li>
+                <li class="item"><a href="#">AGENT FINDER</a></li>
+                <img class=logo src="./homelogo.jpg" alt="..">
+                <li class="item"><a href="#">MANAGE RENTALS</a></li>
+                <li class="item"><a href="#">ADVERTISE</a></li>
+                <li class="item"><a href="#">HELP</a></li>
+                <li class="item"><a href="#">SIGN IN</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <section id="home">
+        <h1>Home Has Never Been More Important</h1>
+        <div class="searchbox">
+            <input type="text" placeholder=" Search" name="search">
+            <button class="search">Go</button>
+        </div>
+
+    </section>
+</body>
+
+</html>
